@@ -9,11 +9,13 @@ module.exports = {
     requireConfigFile: false
   },
   extends: [
-    '@nuxtjs',
-    'plugin:nuxt/recommended'
+    '@nuxtjs'
   ],
   plugins: [
   ],
   // add your custom rules here
-  rules: {}
+  rules: {
+    'vue/no-extra-semi': '1',
+    'vue/semi': '1'
+  }
 }

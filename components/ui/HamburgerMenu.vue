@@ -1,0 +1,19 @@
+<template>
+  <button
+    class="
+      flex
+      items-center
+      px-3
+      py-2
+      border
+      rounded
+      text-teal-lighter
+      border-teal-light
+      hover:text-white
+      hover:border-white
+    "
+    v-on:click.prevent="$emit('clicked')"
+  >
+    <UiIconsHamburger />
+  </button>
+</template>

@@ -1,7 +1,7 @@
-<template>
-  <Tutorial />
-</template>
-
 <script>
-export default {}
+  export default {
+    middleware({ redirect }) {
+      return redirect('/favorites');
+    }
+  }
 </script>
