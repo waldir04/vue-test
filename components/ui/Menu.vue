@@ -1,7 +1,7 @@
 <template>
   <ul class="flex">
 
-    <li v-for="item of items"  class="block sm:inline-block mr-10 text-base text-green-900">
+    <li v-for="(item, index) of items" v-bind:key="index" class="block sm:inline-block mr-10 text-base text-green-900">
       <NuxtLink v-bind:to="item.path" class="hover:text-gray-500">
         {{ item.name }}
       </NuxtLink>
