@@ -6,7 +6,7 @@
           <UiIllustrativeHouse />
         </div>
 
-        <FavoritesGalleryPreview v-bind:images="getPreviewImages()" v-bind:totalItems="getNumberItems()" />
+        <FavoritesGalleryPreview v-else v-bind:images="getPreviewImages()" v-bind:totalItems="getNumberItems()" />
       </div>
 
       <div class="mt-4">
